@@ -1,0 +1,15 @@
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\MainWindow.g.cs
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\App.g.cs
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox_MarkupCompile.cache
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox_MarkupCompile.lref
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.csprojAssemblyReference.cache
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\bin\Debug\textbox.exe.config
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\bin\Debug\textbox.exe
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\bin\Debug\textbox.pdb
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\MainWindow.baml
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.g.resources
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.Properties.Resources.resources
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.csproj.GenerateResource.cache
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.csproj.CoreCompileInputs.cache
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.exe
+E:\Amir desktop\учеба\ТРПО\practice3\textbox\obj\Debug\textbox.pdb
