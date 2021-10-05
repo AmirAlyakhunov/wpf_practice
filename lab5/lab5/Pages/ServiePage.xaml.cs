@@ -23,7 +23,15 @@ namespace lab5.Pages
         public ServiePage()
         {
             InitializeComponent();
-            LViewServices.ItemsSource = App.Context.Services.ToList();
+            if (App.CurrentUser.RoleId == 1)
+            {
+                BtnAddService.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                BtnAddService.Visibility = Visibility.Collapsed;
+            }
+
             ComboSortBy.SelectedIndex = 0;
             ComboDiscount.SelectedIndex = 0;
         }

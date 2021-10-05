@@ -111,6 +111,9 @@
     <Compile Include="Entities\ProductSale.cs">
       <DependentUpon>CarServiceModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Role.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Service.cs">
       <DependentUpon>CarServiceModel.tt</DependentUpon>
     </Compile>
@@ -118,7 +121,13 @@
     <Compile Include="Entities\ServicePhoto.cs">
       <DependentUpon>CarServiceModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\sysdiagram.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Tag.cs">
+      <DependentUpon>CarServiceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\User.cs">
       <DependentUpon>CarServiceModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">

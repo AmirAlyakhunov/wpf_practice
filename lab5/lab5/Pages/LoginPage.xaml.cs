@@ -24,5 +24,19 @@ namespace lab5.Pages
         {
             InitializeComponent();
         }
+
+        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            var currentUser = App.Context.Users.FirstOrDefault(p => p.Login == TBoxLogin.Text && p.Password == PBoxPassword.Password);
+            if (currentUser != null)
+            {
+                App.CurrentUser = currentUser;
+                NavigationService.Navigate(new ServiePage());
+            }
+            else
+            {
+                MessageBox.Show("Пользователь не найден", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

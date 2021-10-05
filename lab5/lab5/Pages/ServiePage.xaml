@@ -62,8 +62,8 @@
                                 <TextBlock Width="auto" Style="{StaticResource BlockCommon}" FontSize="12" Text="{Binding DiscountText}" Visibility="{Binding DiscountVisibility}" HorizontalAlignment="Left"></TextBlock>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"></Button>
-                                    <Button Content="Удалить" Name="BtnDelete" Click="BtnDelete_Click"></Button>
+                                    <Button Content="Редактировать" Name="BtnEdit" Visibility="{Binding AdminControlsVisibility}" Click="BtnEdit_Click"></Button>
+                                    <Button Content="Удалить" Name="BtnDelete" Visibility="{Binding AdminControlsVisibility}" Click="BtnDelete_Click"></Button>
                                 </StackPanel>
                             </StackPanel>
                         </Grid>
@@ -71,6 +71,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Grid.Row="3" HorizontalAlignment="Right" Name="BtnAddService" Click="BtnAddService_Click" Content="Добавить услугу"></Button>
+        <Button Grid.Row="3" HorizontalAlignment="Right" Name="BtnAddService" Click="BtnAddService_Click" Visibility="{Binding AdminControlsVisibility}" Content="Добавить услугу"></Button>
     </Grid>
 </Page>

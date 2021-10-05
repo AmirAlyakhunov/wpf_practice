@@ -15,5 +15,7 @@ namespace lab5
     {
         public static Entities.DataBaseNameEntities Context
         { get; } = new Entities.DataBaseNameEntities();
+
+        public static Entities.User CurrentUser = null;
     }
 }

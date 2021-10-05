@@ -56,5 +56,21 @@ namespace lab5.Entities
                     return "#D1FFD1";
             }
         }
+
+        public string AdminControlsVisibility
+        {
+            // 1 - admin 2 - user
+            get
+            {
+                if (App.CurrentUser.RoleId == 1)
+                {
+                    return "Visible";
+                }
+                else
+                {
+                    return "Hidden";
+                }
+            }
+        }
     }
 }
