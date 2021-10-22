@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF_Demo_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Demo_App"
+        mc:Ignorable="d"
+        Title="Esoft" Height="480" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="logo.png" Width="200" VerticalAlignment="Top" Margin="20"></Image>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <Button Content="Риелторы" Name="BtnAgent" Click="BtnAgent_Click" BorderThickness="1" Style="{StaticResource ButtonMenu}" >
+            </Button>
+            <Button Content="Клиенты" x:Name="BtnClient" Click="BtnClient_Click" Style="{StaticResource ButtonMenu}" >
+            </Button>
+            <Button Content="Недвижимость" x:Name="BtnRealEstate" Click="BtnRealEstate_Click" Style="{StaticResource ButtonMenu}" >
+            </Button>
+            <Button Content="Предложения" x:Name="BtnSupplies" Click="BtnSupplies_Click" Style="{StaticResource ButtonMenu}" >
+            </Button>
+            <Button Content="Требования" x:Name="BtnDemands" Click="BtnDemands_Click" Style="{StaticResource ButtonMenu}" >
+            </Button>
+            <Button Content="Сделки" Style="{StaticResource ButtonMenu}" >
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
