@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Суммарная длина тени" Height="450" Width="484.263">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="275*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"></RowDefinition>
+            <RowDefinition Height="70*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2">
+            <WrapPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <WrapPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" Margin="0,5,5,5">
+                        <Label Content="Начало 1-го отрезка"></Label>
+                        <TextBox x:Name="coord1" Width="100" PreviewKeyDown="coord1_PreviewKeyDown" PreviewTextInput="coord1_PreviewTextInput"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,5,5,5">
+                        <Label Content="Конец 1-го отрезка"></Label>
+                        <TextBox x:Name="coord2" Width="100" PreviewKeyDown="coord2_PreviewKeyDown" PreviewTextInput="coord2_PreviewTextInput"></TextBox>
+                    </StackPanel>
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal">
+
+                    <StackPanel Orientation="Horizontal" Margin="0,5,5,5">
+                        <Label Content="Начало 2-го отрезка"></Label>
+                        <TextBox x:Name="coord3" Width="100" PreviewKeyDown="coord3_PreviewKeyDown" PreviewTextInput="coord3_PreviewTextInput"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,5,5,5">
+                        <Label Content="Конец 2-го отрезка"></Label>
+                        <TextBox x:Name="coord4" Width="100" PreviewKeyDown="coord4_PreviewKeyDown" PreviewTextInput="coord4_PreviewTextInput"></TextBox>
+                    </StackPanel>
+                </WrapPanel>
+
+            </WrapPanel>
+            <DockPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="0, 8">
+                <Button DockPanel.Dock="Bottom" x:Name="result_btn" Content="Рассчитать тень" Padding="5" Width="200" Click="result_btn_Click"></Button>
+            </DockPanel>
+        </DockPanel>
+        <Grid Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
+            <TextBlock x:Name="answer" Margin="65,0,10,10" Padding="4"></TextBlock>
+            <Label Content="Результат: "></Label>
+        </Grid>
+    </Grid>
+</Window>

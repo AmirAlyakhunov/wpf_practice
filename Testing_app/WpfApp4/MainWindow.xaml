@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Вид треугольника" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Определение вида треугольника" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14"></Label>
+        <StackPanel Grid.Row="1">
+            <TextBlock Grid.Row="1" Text="Строна А" Margin="8, 4"></TextBlock>
+            <TextBox x:Name="a_txtbox" Margin="8, 0" PreviewTextInput="a_txtbox_PreviewTextInput" PreviewKeyDown="a_txtbox_PreviewKeyDown"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <TextBlock Grid.Row="1" Text="Строна B" Margin="8, 4"></TextBlock>
+            <TextBox x:Name="b_txtbox" Margin="8, 0" PreviewTextInput="b_txtbox_PreviewTextInput" PreviewKeyDown="b_txtbox_PreviewKeyDown"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <TextBlock Grid.Row="1" Text="Строна C" Margin="8, 4"></TextBlock>
+            <TextBox x:Name="c_txtbox" Margin="8, 0" PreviewTextInput="c_txtbox_PreviewTextInput" PreviewKeyDown="c_txtbox_PreviewKeyDown"></TextBox>
+        </StackPanel>
+        <Grid Grid.Row="4" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="95"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"  Content="Треугольник: " Margin="8,0,0,0"></Label>
+            <Label Grid.Column="1" x:Name="result_label" HorizontalAlignment="Stretch"></Label>
+            <Button Grid.Column="2" Content="Определить" Padding="8" HorizontalAlignment="Right" Margin="0, 0, 8, 0" Click="Button_Click"/>
+        </Grid>
+    </Grid>
+</Window>
